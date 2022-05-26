@@ -1,0 +1,158 @@
+body 
+{
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+}
+#calculator
+{
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 520px;
+    height: 520px;
+    margin: auto;
+    border: 2px solid #404040;
+    padding: 20px;
+}
+.numberKey, .functionKey, .operationKey
+{
+    text-align: center;
+    line-height: 100px;
+    font-size: 2em;
+    transition: 0.2 ease-in-out;
+    border-radius: 5px;
+    border: 2px solid #404040;
+}
+.numberKey:hover, .functionKey:hover, .operationKey:hover
+{
+    filter: opacity(40%);
+}
+.numberKey
+{
+    background-color: #0040ff
+}
+.functionKey
+{
+    background-color: #ffff00;
+}
+.operationKey
+{
+    background-color: #ff0040;
+}
+
+#display
+{
+    background-color: white;
+    grid-column: 1/6;
+    grid-row: 1;
+    text-align: center;
+    line-height: 100px;
+    font-size: 2em;
+    border-radius: 5px;
+    border: 2px solid #404040;
+    overflow: hidden;
+}
+
+#seven
+{
+    grid-column: 1;
+    grid-row: 2;
+}
+#eight
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+#nine
+{
+    grid-column: 3;
+    grid-row: 2;
+}
+#divide
+{
+    grid-column: 4;
+    grid-row: 2;
+}
+#delete
+{
+    grid-column: 5;
+    grid-row: 2;
+}
+
+#four
+{
+    grid-column: 1;
+    grid-row: 3;
+}
+#five
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+#six
+{
+    grid-column: 3;
+    grid-row: 3;
+}
+#multply
+{
+    grid-column: 4;
+    grid-row: 3;
+}
+#clear
+{
+    grid-column: 5;
+    grid-row: 3;
+}
+
+#one
+{
+    grid-column: 1;
+    grid-row: 4;
+}
+#two
+{
+    grid-column: 2;
+    grid-row: 4;
+}
+#three
+{
+    grid-column: 3;
+    grid-row: 4;
+}
+#minus
+{
+    grid-column: 4;
+    grid-row: 4;
+}
+#equal
+{
+    grid-column: 5;
+    grid-row: 4/6;
+    line-height: 200px;
+}
+
+#zero
+{
+    grid-column: 1;
+    grid-row: 5;
+}
+#morp
+{
+    grid-column: 3;
+    grid-row: 5;
+}
+#comma
+{
+    grid-column: 2;
+    grid-row: 5;
+}
+#plus
+{
+    grid-column: 4;
+    grid-row: 5;
+}
